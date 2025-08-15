@@ -1,0 +1,123 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Ding Zhiyu",
+    "label": "High Performance Computing",
+    "image": "https://picture.nevergpdzy.cn/img_for_Typora/6cdbc90753f6f68dda6fc8243b6baef.jpg",
+    "email": "i@nevergpdzy.cn",
+    "phone": "+86 18765788600",
+    "url": "https://nevergpdzy.cn",
+    "summary": "Ding Zhiyu is from Weifang, Shandong. He is currently an undergraduate student majoring in Data Science and Big Data Technology at Southwest Petroleum University. He is a member of the university's supercomputing team, mainly participating in various domestic and international supercomputing competitions. He has taken part in the ASC Student Supercomputer Challenge, the online track IndySCC24 of the Student Cluster Competition, the 2024 Marine Computing Challenge (MCC), the tecorigin Operator Development Challenge, and the Tianyi Cloud Xirang Cup for College AI Competitions. Through these competitions, he continuously learns and pushes his own boundaries. He has now embarked on research in the field of high-performance computing, looking forward to achieving even more in the future.",
+    "location": {
+      "address": "Southwest Petroleum University",
+      "postalCode": "610500",
+      "city": "Chengdu,Sichuan",
+      "countryCode": "CN",
+      "region": "Sichuan"
+    },
+    "profiles": []
+  },
+  "work": [],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Southwest Petroleum University",
+      "url": "https://www.ou.edu/",
+      "area": "Data Science and Big Data",
+      "studyType": "Bachelor",
+      "startDate": "2023-09-01",
+      "endDate": "",
+      "score": "4.01",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Third Prize in National Finals of the Marine Computing Challenge 2024",
+      "date": "2024-8-28",
+      "awarder": "China Pacific Society and Beijing Parallel Computing Technology Co., Ltd.",
+      "summary": "Awarded to Zhiyu Ding, PanyiLiu, Zixiang Zhou, Guangyong He from Southwest Petroleum University, under the guidance of Professor Bo Peng and Quan Zhang."
+    },
+    {
+      "title": "Third Prize in the National Finals of the 15th \"Lanqiao Cup\" National Software and Information Technology Professionals Competition",
+      "date": "2024-6-2",
+      "awarder": "The Talent Exchange Center of the Ministry of Industry and Information Technology and the Organizing Committee of the Lanqiao Cup Competition",
+      "summary": "Awarded third prize in the  National Finals of Python programming design competition, Blue Bridge Cup, national final for professional software and information technology talents."
+    },
+    {
+      "title": "1 First-Class Scholarships (2024 Autumn) and 1 Second-Class Scholarships (2024 Spring)",
+      "date": "2024",
+      "awarder": "Southwest Petroleum University",
+      "summary": ""
+    }
+  ],
+  "publications": [],
+  "skills": [],
+  "languages": [
+    {
+      "language": "Chinese",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": " IndySCC24 – Student Cluster Competition",
+      "description": "In the months leading up to the conference, teams compete remotely using provided hardware in an education-focused experience supported by HPC experts. A 48-hour contest held concurrently with SC is the culmination of experience and knowledge gained by the teams in the preceding months.",
+      "highlights": [
+        "Optimized MLPerf benchmark on competition machines, boosting efficiency and throughput in machine learning tasks",
+        "Conducted NAMD simulations to study water properties, protein folding, and diffusion coefficients under various conditions.",
+        "Optimized NAMD configurations for large-scale simulations, achieving high simulation efficiency"
+      ],
+      "keywords": [
+        "MLPerf Optimization",
+        "NAMD Simulations",
+        "HPC Competitions"
+      ],
+      "startDate": "2024-03-3",
+      "endDate": "2024-11-19",
+      "url": "https://sc24.supercomputing.org/2024/09/introducing-the-innovative-indyscc-teams/",
+      "roles": [
+        "Member"
+      ],
+      "entity": "NAMD Application and MLPerf Inference Optimization Project",
+      "type": "Competition"
+    },
+    {
+      "name": "National Finals of the Marine Computing Challenge 2024",
+      "description": "The final competition uses part of the source code of the self-developed oil spill prediction model as the competition problem. It primarily assesses participants' understanding of the Euler method for solving trajectory equations and their ability to use the vector method to determine whether \"oil particles\" will be adsorbed onto the shore.",
+      "highlights": [
+        "By using a hybrid MPI and OpenMP parallelization on the original serial program, and utilizing load balancing, the algorithm’s execution efficiency is improved, fully leveraging the 2-node 128-core computing resources.",
+        "Optimization techniques like fast exclusion and binary search quickly determine the relationship between the oil particle trajectory and the coastline.",
+        "Data access order is rearranged using Fortran/C, improving cache hit rates by exploiting memory locality."
+      ],
+      "keywords": [],
+      "startDate": "2024-7",
+      "endDate": "2024-8-28",
+      "url": "http://www.paraedu.org.cn/enterstep/index?id=14&groupTag=MCC",
+      "roles": [
+        "Leader"
+      ],
+      "entity": "Dream Brook Team",
+      "type": "Competition"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sample.resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  },
+  "certificates": [
+    {
+      "name": "Industrial Internet paltform development engineer",
+      "date": "2024-5-22",
+      "issuer": "The Talent Exchange Center of the Ministry of Industry",
+      "url": "https://www.miitec.cn/home/certificate"
+    }
+  ]
+}
