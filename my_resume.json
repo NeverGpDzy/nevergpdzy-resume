@@ -2,12 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "丁致宇",
-    "label": "高性能计算-还没写完呢",
+    "label": "高性能计算&并行编程",
     "image": "https://picture.nevergpdzy.cn/img_for_Typora/6cdbc90753f6f68dda6fc8243b6baef.jpg",
     "email": "i@nevergpdzy.cn",
     "phone": "+86 18765788600",
     "url": "https://nevergpdzy.cn",
-    "summary": "丁致宇来自山东潍坊，目前是西南石油大学数据科学与大数据技术专业的2023级本科生。他是学校超算团队的成员，主要参与各种国内外超算竞赛。他参加了ASC世界大学生超算竞赛、学生集群竞赛线上赛道IndySCC24、2024年海洋计算挑战赛、tecorigin算子开发挑战赛以及天翼云息壤杯高校AI竞赛。通过这些竞赛，他不断学习并挑战自己的极限。他现在已经开始从事高性能计算领域的研究，期待未来取得更大的成就。",
+    "summary": "丁致宇，来自风筝之都「山东潍坊」，西南石油大学数据科学与大数据技术专业2023级本科生，目前专业排名1/64。具备扎实的高性能计算基础，熟练掌握C/C++、CUDA、MPI/OpenMP等并行编程技术。通过参与ASC世界大学生超算竞赛、SC24 IndySCC、海洋计算挑战赛等竞赛项目，积累了丰富的性能优化经验，包括海洋模拟并行化、深度学习算子开发、SpMV算法异构优化等实际项目。擅长在CPU/GPU异构平台上进行算法优化和性能调优，具备良好的问题分析和解决能力。正在深入学习高性能计算相关技术，希望在该领域持续发展。",
     "location": {
       "address": "西南石油大学",
       "postalCode": "610500",
@@ -29,13 +29,12 @@
     {
       "institution": "西南石油大学-双一流",
       "url": "https://www.swpu.edu.cn/",
-      "area": "计算机与软件学院 数据科学与大数据技术专业",
-      "studyType": "GPA:4.1/5.0,专业排名:1/64",
+      "area": "计算机与软件学院 数据科学与大数据技术",
+      "studyType": "学业成绩：「GPA:4.1/5.0 ，专业排名:1/64」",
       "startDate": "2023-09-01",
       "endDate": "",
       "score": "4.1",
       "courses": [
-        "GPA:4.1/5.0,专业排名:1/64",
         "大数据平台技术及应用(98),Python(96),面向对象程序设计(95)",
         "统计学原理(93),人工智能导论(92),线性代数(91),数据结构及算法(90)"
       ]
@@ -142,9 +141,78 @@
       "fluency": "一窍不通"
     }
   ],
-  "interests": [],
+  "interests": [
+    {
+      "name": "旅行",
+      "keywords": [
+        "飞行",
+        "探索",
+        "酒店"
+      ]
+    },
+    {
+      "name": "摄影",
+      "keywords": [
+        "捕捉",
+        "记录",
+        "回忆"
+      ]
+    }
+  ],
   "references": [],
   "projects": [
+    {
+      "name": "基于溢油预测模型的并行计算优化",
+      "description": "该项目选自2024海洋计算挑战赛决赛题目。采用自主研发的二维溢油预测模型，在保证对欧拉方法求解轨迹方程的理解以及基于向量法判断油粒子是否会吸附到岸上的正确性的情况下，利用并行计算技术对程序进行加速。",
+      "highlights": [
+        "承担工作：通过在原有串行程序上进行MPI与OpenMP混合并行化，并采用负载均衡技术，使算法执行效率得 到提升，利用了非阻塞通信、打包数据通信等方式进行优化通信",
+        "项目成果：通过组委会提供算例的正确性检验，在初始算例上，相较于Baseline，取得了大约2482.14倍的加 速比，在决赛队伍中排位第五，获得全国三等奖。"
+      ],
+      "keywords": [],
+      "startDate": "2024-07-01",
+      "endDate": "2024-08-28",
+      "url": "http://www.paraedu.org.cn/enterstep/index?id=14&groupTag=MCC",
+      "roles": []
+    },
+    {
+      "name": "基于AlphaFold3的蛋白质结构预测推理优化挑战",
+      "description": "选自ASC25世界大学生超级计算机竞赛，针对Google DeepMind开发的AlphaFold3蛋白质结构预测模型进行推理性能优化。项目要求在保持预测精度的前提下，分别在GPU和CPU平台上最小化推理时间，处理12个不同长度的蛋白质序列样本，涉及复杂的扩散模型架构和JAX深度学习框架优化。",
+      "highlights": [
+        "承担工作：在NVIDIA A100 GPU和Intel Xeon CPU混合架构上完成AlphaFold3环境部署，通过cProfiler性能分析工具识别推理瓶颈，发现JAX框架的JIT编译占用大量时间。针对GPU优化实施禁用Triton GEMM编译、优化编译桶参数等策略；针对CPU优化解决diffusion_head.py模块中数值计算精度问题，修复负数开方导致的NaN错误，采用epsilon数值稳定性技术确保计算准确性。",
+        "项目成果：成功实现AlphaFold3推理显著加速，GPU优化在不同序列长度下达到1.2-2.4倍的性能提升，CPU优化实现1.1-5.3倍的加速比，特别是在短序列上效果显著。通过系统性的编译优化和算法调优，在保证蛋白质结构预测confidence值与基准代码一致的情况下，为生物信息学和药物设计领域的AlphaFold3应用提供了高效的推理解决方案"
+      ],
+      "keywords": [],
+      "startDate": "2025-01",
+      "endDate": "2025-02",
+      "url": "https://www.asc-events.net/StudentChallenge/index.html",
+      "roles": []
+    },
+    {
+      "name": "基于NAMD的分子动力学模拟性能优化挑战",
+      "description": "选自IndySCC@SC24国际超算学生集群竞赛，针对生物分子系统进行大规模分子动力学模拟优化。项目涵盖水分子物理性质分析、蛋白质折叠动力学、热力学积分自由能计算等多个层次的生物计算挑战，需要在有限48h下实现从10万到2000万原子规模系统的高效模拟。",
+      "highlights": [
+        "承担工作：在Jetstream2云平台上完成NAMD环境部署与GPU加速配置，实现多种分子动力学模拟算法包括扩展系统自适应偏置力方法(eABF)、副本交换分子动力学、热力学积分等高级采样技术，通过氢质量重分配技术将时间步长从2fs优化至4fs，采用GPU并行计算策略处理多副本同时运行的复杂任务调度。",
+        "项目成果：成功完成水分子热容和扩散系数的精确计算，实现deca-alanine蛋白质α-螺旋折叠自由能曲线的收敛计算，在A100 GPU上达到约15纳秒/天的模拟性能，通过算法优化在保证计算精度的前提下显著提升了大规模生物分子系统的计算效率。"
+      ],
+      "keywords": [],
+      "startDate": "2024-05-03",
+      "endDate": "2024-11-19",
+      "url": "https://sc24.supercomputing.org/2024/09/introducing-the-innovative-indyscc-teams/",
+      "roles": []
+    },
+    {
+      "name": "基于新一代神威超算的PCG 算法优化",
+      "description": "项目简介: 选自第七届国产CPU 并行应用挑战赛初赛题目，对预处理共轭梯度算法PCG 进行众核优\n化。",
+      "highlights": [
+        "承担工作: 针对核心热点SpMV 算法，采用了近似均衡的行划分策略、LDM 空间访存调整等方法进行优化；分析流程，利用主核隐藏部分计算，充分利用LDM 空间。",
+        "项目成果: 通过正确性检验，达到平均30倍的加速比"
+      ],
+      "keywords": [],
+      "startDate": "2024-02-21",
+      "endDate": "2024-04-21",
+      "url": "https://nevergpdzy.cn/",
+      "roles": []
+    },
     {
       "name": "IndySCC24 学生集群竞赛",
       "description": "在会议举办前的几个月里，各队伍使用提供的硬件进行远程竞赛，这是一个在HPC专家支持下的教育导向体验。与SC大会同期举行的48小时竞赛是各队在前几个月积累的经验和知识的巅峰体现。",
@@ -184,33 +252,8 @@
       ],
       "entity": "梦溪队",
       "type": "Competition"
-    },
-    {
-      "name": "基于溢油预测模型的并行计算优化",
-      "description": "该项目选自2024海洋计算挑战赛决赛题目。采用自主研发的二维溢油预测模型，在保证对欧拉方法求解轨迹方程的理解以及基于向量法判断油粒子是否会吸附到岸上的正确性的情况下，利用并行计算技术对程序进行加速。",
-      "highlights": [
-        "承担工作：通过在原有串行程序上进行MPI与OpenMP混合并行化，并采用负载均衡技术，使算法执行效率得 到提升，利用了非阻塞通信、打包数据通信等方式进行优化通信",
-        "项目成果：通过组委会提供算例的正确性检验，在初始算例上，相较于Baseline，取得了大约2482.14倍的加 速比，在决赛队伍中排位第五，获得全国三等奖。"
-      ],
-      "keywords": [],
-      "startDate": "2024-07-01",
-      "endDate": "2024-08-28",
-      "url": "http://www.paraedu.org.cn/enterstep/index?id=14&groupTag=MCC",
-      "roles": []
-    },
-    {
-      "name": "基于新一代神威超算的PCG 算法优化",
-      "description": "项目简介: 选自第七届国产CPU 并行应用挑战赛初赛题目，对预处理共轭梯度算法PCG 进行众核优\n化。",
-      "highlights": [
-        "承担工作: 针对核心热点SpMV 算法，采用了近似均衡的行划分策略、LDM 空间访存调整等方法进行优化；分析流程，利用主核隐藏部分计算，充分利用LDM 空间。",
-        "项目成果: 通过正确性检验，达到平均30倍的加速比"
-      ],
-      "keywords": [],
-      "startDate": "2024-02-21",
-      "endDate": "2024-04-21",
-      "url": "https://nevergpdzy.cn/",
-      "roles": []
     }
+
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sample.resume.json",
@@ -218,6 +261,12 @@
     "lastModified": "2017-12-24T15:53:00"
   },
   "certificates": [
+    {
+      "name": "曙光国产C86加速卡培训证书（人工智能+科学计算方向）",
+      "date": "2025-06-18",
+      "issuer": "国家高性能计算机工程技术研究中心",
+      "url": "https://www.miitec.cn/home/certificate"
+    },
     {
       "name": "工业互联网平台开发工程师",
       "date": "2024-05-22",

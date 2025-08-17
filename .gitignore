@@ -1,5 +1,5 @@
 node_modules/
-*.html
+
 *.pdf
 
 # Dependencies
@@ -9,7 +9,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # Generated files
-*.html
+
 *.pdf
 resume.*
 output/
