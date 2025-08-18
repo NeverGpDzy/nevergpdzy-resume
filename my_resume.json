@@ -7,7 +7,7 @@
     "email": "i@nevergpdzy.cn",
     "phone": "+86 18765788600",
     "url": "https://nevergpdzy.cn",
-    "summary": "丁致宇，来自风筝之都「山东潍坊」，西南石油大学数据科学与大数据技术专业2023级本科生，目前专业排名1/64。具备扎实的高性能计算基础，熟练掌握C/C++、CUDA、MPI/OpenMP等并行编程技术。通过参与ASC世界大学生超算竞赛、SC24 IndySCC、海洋计算挑战赛等竞赛项目，积累了丰富的性能优化经验，包括海洋模拟并行化、深度学习算子开发、SpMV算法异构优化等实际项目。擅长在CPU/GPU异构平台上进行算法优化和性能调优，具备良好的问题分析和解决能力。正在深入学习高性能计算相关技术，希望在该领域持续发展。",
+    "summary": "丁致宇，来自风筝之都「山东潍坊」，西南石油大学数据科学与大数据技术专业2023级本科生，目前专业排名1/64。具备扎实的高性能计算基础，熟练掌握C/C++、CUDA、MPI/OpenMP等并行编程技术。通过参与ASC世界大学生超算竞赛、IndySCC@SC24、海洋计算挑战赛、算子开发挑战赛等竞赛项目，积累了丰富的性能优化经验，包括海洋模拟并行化、深度学习算子开发、SpMV算法在异构平台的优化等实际项目。擅长在CPU/GPU/神威等异构平台上进行算法优化和性能调优，具备良好的问题分析和解决能力，具有很强的执行力。正在深入学习高性能计算相关技术，希望在该领域持续发展！",
     "location": {
       "address": "西南石油大学",
       "postalCode": "610500",
@@ -165,17 +165,21 @@
       "name": "基于溢油预测模型的并行计算优化",
       "description": "该项目选自2024海洋计算挑战赛决赛题目。采用自主研发的二维溢油预测模型，在保证对欧拉方法求解轨迹方程的理解以及基于向量法判断油粒子是否会吸附到岸上的正确性的情况下，利用并行计算技术对程序进行加速。",
       "highlights": [
-        "承担工作：通过在原有串行程序上进行MPI与OpenMP混合并行化，并采用负载均衡技术，使算法执行效率得 到提升，利用了非阻塞通信、打包数据通信等方式进行优化通信",
+        "承担工作：通过在原有串行程序上进行MPI与OpenMP混合并行化，并采用负载均衡技术，充分利用2节点128核计算资源，使算法执行效率得到提升。访存优化方面我们使用Fortran/C重新排列数据访问顺序，利用内存局部性提高缓存命中率。在通信优化方面我利用了非阻塞通信、打包数据通信等方式进行优化。我们还在在算法层面使用快速排除未交叉线段和二分查找等优化技术，快速确定油粒子轨迹与海岸线的关系",
         "项目成果：通过组委会提供算例的正确性检验，在初始算例上，相较于Baseline，取得了大约2482.14倍的加 速比，在决赛队伍中排位第五，获得全国三等奖。"
       ],
       "keywords": [],
       "startDate": "2024-07-01",
-      "endDate": "2024-08-28",
+      "endDate": "2024-08-31",
       "url": "http://www.paraedu.org.cn/enterstep/index?id=14&groupTag=MCC",
-      "roles": []
+            "roles": [
+        "队长"
+      ],
+      "entity": "参赛队：梦溪湖",
+      "type": "Competition"
     },
     {
-      "name": "基于AlphaFold3的蛋白质结构预测推理优化挑战",
+      "name": "基于AlphaFold3的蛋白质结构预测推理优化项目",
       "description": "选自ASC25世界大学生超级计算机竞赛，针对Google DeepMind开发的AlphaFold3蛋白质结构预测模型进行推理性能优化。项目要求在保持预测精度的前提下，分别在GPU和CPU平台上最小化推理时间，处理12个不同长度的蛋白质序列样本，涉及复杂的扩散模型架构和JAX深度学习框架优化。",
       "highlights": [
         "承担工作：在NVIDIA A100 GPU和Intel Xeon CPU混合架构上完成AlphaFold3环境部署，通过cProfiler性能分析工具识别推理瓶颈，发现JAX框架的JIT编译占用大量时间。针对GPU优化实施禁用Triton GEMM编译、优化编译桶参数等策略；针对CPU优化解决diffusion_head.py模块中数值计算精度问题，修复负数开方导致的NaN错误，采用epsilon数值稳定性技术确保计算准确性。",
@@ -201,8 +205,21 @@
       "roles": []
     },
     {
-      "name": "基于新一代神威超算的PCG 算法优化",
-      "description": "项目简介: 选自第七届国产CPU 并行应用挑战赛初赛题目，对预处理共轭梯度算法PCG 进行众核优\n化。",
+      "name": "基于MLPerf Inference的BERT模型推理性能优化",
+      "description": "选自IndySCC24国际超算竞赛MLPerf Inference基准测试挑战，针对BERT-99大语言模型在问答任务(Squad v1.1数据集)上进行推理性能优化。项目要求在CPU和GPU异构平台上实现高效推理，使用MLCommons CM自动化框架进行基准测试配置和结果提交，涉及深度学习推理优化、并行计算和性能调优等核心技术。",
+      "highlights": [
+        "承担工作：在AMD EPYC 7713 CPU和NVIDIA A100 GPU混合架构上部署MLPerf环境，克服权限配置和文件打包等技术难题。设计并实现批处理推理优化策略，包括多输入样本批量收集、数据预处理pipeline重构、GPU并行推理加速和结果后处理优化。通过深入分析推理瓶颈，重构issue_queries方法实现批量数据准备，优化process_batch方法提升GPU利用率，实现端到端的推理性能优化。",
+        "项目成果：成功实现BERT推理性能显著提升，GPU推理吞吐量达到85.447样本/秒，相比CPU的3.193样本/秒提升26.8倍。通过批处理优化技术将GPU利用率从基准测试的54%提升至97%，在保持90.876%准确率的同时大幅降低推理延迟。项目成果成功提交至GitHub并通过MLCommons官方验证。"
+      ],
+      "keywords": [],
+      "startDate": "2024-05-03",
+      "endDate": "2024-11-19",
+      "url": "https://sc24.supercomputing.org/2024/09/introducing-the-innovative-indyscc-teams/",
+      "roles": []
+    },
+    {
+      "name": "基于新一代神威超算的PCG算法优化",
+      "description": "项目简介: 选自第七届国产CPU 并行应用挑战赛初赛题目，对预处理共轭梯度算法PCG 进行众核优化。",
       "highlights": [
         "承担工作: 针对核心热点SpMV 算法，采用了近似均衡的行划分策略、LDM 空间访存调整等方法进行优化；分析流程，利用主核隐藏部分计算，充分利用LDM 空间。",
         "项目成果: 通过正确性检验，达到平均30倍的加速比"
@@ -212,48 +229,7 @@
       "endDate": "2024-04-21",
       "url": "https://nevergpdzy.cn/",
       "roles": []
-    },
-    {
-      "name": "IndySCC24 学生集群竞赛",
-      "description": "在会议举办前的几个月里，各队伍使用提供的硬件进行远程竞赛，这是一个在HPC专家支持下的教育导向体验。与SC大会同期举行的48小时竞赛是各队在前几个月积累的经验和知识的巅峰体现。",
-      "highlights": [
-        "在竞赛机器上优化MLPerf基准测试，提升机器学习任务的效率和吞吐量",
-        "进行NAMD模拟研究水的性质、蛋白质折叠和各种条件下的扩散系数",
-        "优化NAMD大规模模拟配置，实现高模拟效率"
-      ],
-      "keywords": [
-        "MLPerf优化",
-        "NAMD模拟",
-        "HPC竞赛"
-      ],
-      "startDate": "2024-03-03",
-      "endDate": "2024-11-19",
-      "url": "https://sc24.supercomputing.org/2024/09/introducing-the-innovative-indyscc-teams/",
-      "roles": [
-        "成员"
-      ],
-      "entity": "NAMD应用和MLPerf推理优化项目",
-      "type": "Competition"
-    },
-    {
-      "name": "2024年海洋计算挑战赛全国总决赛",
-      "description": "总决赛使用自主研发的石油泄漏预测模型的部分源代码作为竞赛题目。主要考察参赛者对欧拉法求解轨迹方程的理解，以及运用矢量法判断油粒子是否会被海岸吸附的能力。",
-      "highlights": [
-        "通过在原串行程序上使用MPI和OpenMP混合并行化，并利用负载均衡，提高算法执行效率，充分利用2节点128核计算资源",
-        "使用快速排除和二分查找等优化技术，快速确定油粒子轨迹与海岸线的关系",
-        "使用Fortran/C重新排列数据访问顺序，利用内存局部性提高缓存命中率"
-      ],
-      "keywords": [],
-      "startDate": "2024-07-01",
-      "endDate": "2024-08-28",
-      "url": "http://www.paraedu.org.cn/enterstep/index?id=14&groupTag=MCC",
-      "roles": [
-        "队长"
-      ],
-      "entity": "梦溪队",
-      "type": "Competition"
     }
-
   ],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sample.resume.json",
