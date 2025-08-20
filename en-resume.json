@@ -1,13 +1,13 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Ding Zhiyu",
-    "label": "High Performance Computing & Parallel Programming",
+    "name": "Zhiyu Ding",
+    "label": "High Performance Computing",
     "image": "https://picture.nevergpdzy.cn/img_for_Typora/6cdbc90753f6f68dda6fc8243b6baef.jpg",
     "email": "i@nevergpdzy.cn",
     "phone": "+86 18765788600",
     "url": "https://nevergpdzy.cn",
-    "summary": "Ding Zhiyu, from the 'Kite Capital' Weifang, Shandong Province, is a 2023 undergraduate student majoring in Data Science and Big Data Technology at Southwest Petroleum University, currently ranked 1st out of 64 in his major. With a solid foundation in high-performance computing, he is proficient in C/C++, CUDA, MPI/OpenMP and other parallel programming technologies. Through participation in competitions such as the ASC World University Supercomputing Competition, IndySCC@SC24, Marine Computing Challenge, and Operator Development Challenge, he has accumulated rich experience in performance optimization, including ocean simulation parallelization, deep learning operator development, and SpMV algorithm optimization on heterogeneous platforms. He excels at algorithm optimization and performance tuning on CPU/GPU/Sunway and other heterogeneous platforms, possesses excellent problem analysis and solving abilities, and has strong execution capabilities. Currently deepening his study of high-performance computing related technologies, he hopes to continue developing in this field!",
+    "summary": "Zhiyu Ding is from Weifang, Shandong, the \"Kite Capital\" of China. He is currently a 2023-grade undergraduate student majoring in Data Science and Big Data Technology at Southwest Petroleum University, currently ranked 1st out of 64 students in his major. He has a solid foundation in high-performance computing and is proficient in parallel programming technologies including C/C++, CUDA, MPI/OpenMP. Through participating in competitions such as the ASC Student Supercomputer Challenge, IndySCC@SC24, Marine Computing Challenge, Operator Development Challenge, and others, he has accumulated rich experience in performance optimization, including ocean simulation parallelization, deep learning operator development, and SpMV algorithm optimization on heterogeneous platforms. He excels at algorithm optimization and performance tuning on CPU/GPU/Sunway heterogeneous platforms, possesses strong problem analysis and solving abilities, and demonstrates excellent execution capabilities. He is continuously deepening his study of high-performance computing technologies and hopes to achieve sustained development in this field!",
     "location": {
       "address": "Southwest Petroleum University",
       "postalCode": "610500",
@@ -27,61 +27,61 @@
   "volunteer": [],
   "education": [
     {
-      "institution": "Southwest Petroleum University - Double First-Class",
+      "institution": "Southwest Petroleum University",
       "url": "https://www.swpu.edu.cn/",
-      "area": "School of Computer Science and Software Engineering, Data Science and Big Data Technology",
-      "studyType": "Academic Performance: 「GPA: 4.1/5.0, Major Ranking: 1/65」",
+      "area": "School of Computer and Software Engineering, Data Science and Big Data Technology",
+      "studyType": "Academic Performance: GPA: 4.1/5.0, Major Ranking: 1/65",
       "startDate": "2023-09-01",
       "endDate": "",
       "score": "4.1",
       "courses": [
         "Big Data Platform Technology and Applications (98), Python (96), Object-Oriented Programming (95)",
-        "Principles of Statistics (93), Introduction to Artificial Intelligence (92), Linear Algebra (91), Data Structures and Algorithms (90)"
+        "Statistics Principles (93), Introduction to Artificial Intelligence (92), Linear Algebra (91), Data Structures and Algorithms (90)"
       ]
     }
   ],
   "awards": [
     {
-      "title": "ASC2025 World University Supercomputing Competition International Second Prize",
+      "title": "ASC2025 Student Supercomputer Challenge International Second Prize",
       "date": "2025-06-24",
       "awarder": "ASC Student Supercomputer Challenge Committee",
-      "summary": "The ASC Student Supercomputer Challenge, first held in 2012, is the world's largest supercomputing competition, alongside Germany's ISC and the United States' SC, known as the world's three major supercomputing competitions. This year's AI challenge required teams to run and optimize AlphaFold3 structure prediction code on different computing platforms, testing teams' understanding and optimization capabilities of the AlphaFold3 inference process."
+      "summary": "The ASC Student Supercomputer Challenge, initiated in 2012, is the world's largest supercomputing competition, alongside Germany's ISC and the US SC, forming the world's three major supercomputing competitions. This year's AI challenge required participating teams to run and optimize AlphaFold3 structure prediction code on different computing platforms, testing teams' understanding and optimization capabilities of the AlphaFold3 inference process."
     },
     {
-      "title": "Invited to participate in SC24 International Supercomputing Competition Online Track IndySCC",
+      "title": "Invited to Participate in SC24 International Supercomputing Competition Online Track IndySCC",
       "date": "2024-11-19",
       "awarder": "SC Student Cluster Competition Committee",
-      "summary": "The Supercomputing Conference (SC) is the top conference in the international supercomputing field. IndySCC is the online track established by the SC competition. Like the SC offline track, one of the three major supercomputing competitions, teams must complete given computational tasks within 48 hours under limited conditions and achieve the highest possible computational performance."
+      "summary": "The Supercomputing Conference (SC) is the top international conference in the supercomputing field. IndySCC is the online track established by SC events. Like the SC offline track, one of the three major supercomputing competitions, it requires completing given computational tasks within 48 hours under limited conditions and achieving the highest possible computational performance."
     },
     {
-      "title": "2024 Marine Computing Challenge National Finals Third Prize",
+      "title": "Third Prize in National Finals of Marine Computing Challenge 2024",
       "date": "2024-08-28",
-      "awarder": "China Society for Pacific Studies, Beijing Paratera Technology Co., Ltd.",
-      "summary": "The Marine Computing Challenge (MCC) covers marine big data processing and analysis, marine environment simulation and prediction, marine resource development and utilization, marine disaster early warning and emergency response, marine artificial intelligence applications and other different application scenarios, comprehensively examining participants' skills in marine application fields."
+      "awarder": "China Pacific Society and Beijing Parallel Computing Technology Co., Ltd.",
+      "summary": "The Marine Computing Challenge (MCC) covers marine big data processing and analysis, marine environment simulation and prediction, marine resource development and utilization, marine disaster warning and emergency response, marine artificial intelligence applications, and other application scenarios, comprehensively assessing participants' skills in various marine application fields."
     },
     {
-      "title": "Tecorigin Operator Development Challenge National Finals Third Prize",
+      "title": "Third Prize in Tecorigin Operator Development Challenge National Finals",
       "date": "2024-12-19",
-      "awarder": "Second OpenAtom Contest - OpenAtom Open Source Foundation",
-      "summary": "The Tecorigin Operator Development Challenge is based on the Teco-AL (Taichu Acceleration Library) unified operator library model, using SDAA C programming language for operator performance optimization on the Taichu domestic GPU platform. The competition covers core deep learning operator optimization including tecoalArgmax, tecoalActivationBackward, tecoalConvolutionForward, examining participants' high-performance computing technical capabilities in parallel computing, memory access optimization, and vector instruction optimization under domestic GPU architecture."
+      "awarder": "Second Open Atom Contest - Open Atom Open Source Foundation",
+      "summary": "The Tecorigin Operator Development Challenge is based on the Teco-AL (Taichu Acceleration Library) unified operator library model, using SDAA C programming language for operator performance optimization on the Taichu domestic GPU platform. The competition covers optimization of deep learning core operators such as tecoalArgmax, tecoalActivationBackward, tecoalConvolutionForward, testing participants' high-performance computing technical capabilities in parallel computing, memory access optimization, vector instruction optimization on domestic GPU architectures."
     },
     {
-      "title": "Tianyi Cloud Xi Rang Cup College AI Competition Sichuan Province Second Place",
+      "title": "Second Place in Tianyi Cloud Xirang Cup College AI Competition Sichuan Provincial Competition",
       "date": "2025-07-18",
-      "awarder": "China Telecom Group Co., Ltd., Huawei Technologies Co., Ltd.",
-      "summary": "The Tianyi Cloud Xi Rang Cup College AI Competition operator optimization track, based on Ascend NPU platform using AscendC for operator development and performance optimization. The competition covers high-performance implementation of core deep learning operators such as NLLLossGrad backward operator and QuantBatchMatmul+Swiglu fusion operator, examining key technologies such as multi-core parallelism, Cube/Vector pipeline optimization, and memory management under Ascend 910B architecture. The competition focuses on fine-grained operator optimization of domestic heterogeneous computing infrastructure, promoting innovative applications of high-performance computing in the CANN ecosystem."
+      "awarder": "China Telecom Corporation Limited, Huawei Technologies Co., Ltd.",
+      "summary": "The Tianyi Cloud Xirang Cup College AI Competition operator optimization track, based on Ascend NPU platform using AscendC for operator development and performance optimization. The competition covers high-performance implementation of deep learning core operators such as NLLLossGrad backward operator and QuantBatchMatmul+Swiglu fusion operator, testing key technologies such as multi-core parallelization, Cube/Vector pipeline optimization, memory management under Ascend 910B architecture. The competition focuses on refined operator optimization for domestic heterogeneous computing infrastructure, promoting innovative applications of high-performance computing in the CANN ecosystem."
     },
     {
-      "title": "15th Blue Bridge Cup National Finals Third Prize",
+      "title": "Third Prize in the 15th Blue Bridge Cup National Finals",
       "date": "2024-06-02",
       "awarder": "Ministry of Industry and Information Technology Talent Exchange Center, Blue Bridge Cup Competition Committee",
-      "summary": "Blue Bridge Cup Competition Python Programming Group. This competition covers basic algorithms, data structures, dynamic programming, graph theory, string processing, mathematical computation and other question types, requiring completion of multiple programming problems within limited time under OI competition format, focusing on examining participants' ability to solve algorithmic problems using Python language."
+      "summary": "Blue Bridge Cup Python Programming Group, this competition covers basic algorithms, data structures, dynamic programming, graph theory, string processing, mathematical calculations, and other problem types, requiring completion of multiple programming problems within limited time under OI competition format, focusing on testing participants' ability to solve algorithmic problems using Python language."
     },
     {
-      "title": "Invited to participate in 2024 Tencent Kaiwu AI Global Open Competition Invitational",
+      "title": "Invited to Participate in 2024 Tencent Kaiwu AI Global Open Invitational",
       "date": "2024-12-21",
       "awarder": "2024 Tencent Kaiwu AI Global Open Competition Committee",
-      "summary": "Participated in the 2024 Tencent Kaiwu AI Global Open Competition Invitational, successfully completed the 'AIPC High-Performance Gaming Track'."
+      "summary": "Participated in the 2024 Tencent Kaiwu AI Global Open Invitational and successfully completed the 'AIPC High-Performance Gaming Track'."
     },
     {
       "title": "Outstanding Student First-Class and Second-Class Scholarships",
@@ -94,32 +94,32 @@
   "skills": [
     {
       "name": "C/C++, Fortran",
-      "level": "proficient",
+      "level": "Advanced",
       "keywords": []
     },
     {
-      "name": "Familiar with CPU, GPU Architecture",
-      "level": "proficient",
+      "name": "CPU, GPU Architecture",
+      "level": "Proficient",
       "keywords": []
     },
     {
       "name": "CUDA, HIP",
-      "level": "proficient",
+      "level": "Advanced",
       "keywords": []
     },
     {
-      "name": "Familiar with CUDA Operator Optimization",
-      "level": "Matrix multiplication, Convolution, etc.",
+      "name": "CUDA Operator Optimization",
+      "level": "Matrix Multiplication, Convolution, etc.",
       "keywords": []
     },
     {
       "name": "OpenMP, MPI",
-      "level": "proficient",
+      "level": "Advanced",
       "keywords": []
     },
     {
-      "name": "Sunway Architecture",
-      "level": "experienced",
+      "name": "Sunway Supercomputer",
+      "level": "Proficient",
       "keywords": []
     }
   ],
@@ -137,8 +137,8 @@
       "fluency": "CET4: 521"
     },
     {
-      "language": "Local Dialect",
-      "fluency": "Not proficient"
+      "language": "Local Dialects",
+      "fluency": "Limited"
     }
   ],
   "interests": [
@@ -162,11 +162,11 @@
   "references": [],
   "projects": [
     {
-      "name": "Parallel Computing Optimization Based on Oil Spill Prediction Model",
-      "description": "This project was selected from the 2024 Marine Computing Challenge finals. Using a self-developed two-dimensional oil spill prediction model, under the premise of ensuring understanding of the Euler method for solving trajectory equations and the correctness of vector-based judgment of whether oil particles adhere to the shore, parallel computing technology was utilized to accelerate the program.",
+      "name": "Parallel Computing Optimization for Oil Spill Prediction Model",
+      "description": "This project was selected from the 2024 Marine Computing Challenge finals. Using a self-developed two-dimensional oil spill prediction model, the program was accelerated using parallel computing techniques while ensuring understanding of the Euler method for solving trajectory equations and the correctness of vector-based methods for determining whether oil particles will be adsorbed to the shore.",
       "highlights": [
-        "Responsibilities: Through implementing MPI and OpenMP hybrid parallelization on the original serial program and adopting load balancing techniques, I fully utilized the 2-node 128-core computing resources to improve algorithm execution efficiency. For memory access optimization, we used Fortran/C to rearrange data access order, utilizing memory locality to improve cache hit rates. For communication optimization, I used non-blocking communication, packed data communication, and other optimization methods. We also used algorithm-level optimization techniques such as fast exclusion of non-intersecting line segments and binary search to quickly determine the relationship between oil particle trajectories and coastlines.",
-        "Project Results: Passed correctness verification through test cases provided by the organizing committee. On the initial test case, compared to the baseline, achieved approximately 2482.14x speedup, ranking fifth among finalist teams and winning the national third prize."
+        "Responsibilities: Implemented hybrid MPI and OpenMP parallelization on the original serial program, utilizing load balancing techniques to fully leverage 2-node 128-core computing resources, improving algorithm execution efficiency. For memory access optimization, we used Fortran/C to rearrange data access order, utilizing memory locality to improve cache hit rates. For communication optimization, I utilized non-blocking communication and packed data communication methods. We also implemented algorithm-level optimizations using fast exclusion of non-intersecting line segments and binary search techniques to quickly determine the relationship between oil particle trajectories and coastlines.",
+        "Project Results: Passed correctness verification with test cases provided by the organizing committee. On the initial test case, achieved approximately 2482.14x speedup compared to baseline, ranking fifth among final teams and winning national third prize."
       ],
       "keywords": [],
       "startDate": "2024-07-01",
@@ -175,15 +175,15 @@
       "roles": [
         "Team Leader"
       ],
-      "entity": "Team: Mengxi Lake",
+      "entity": "Team: Dream Brook",
       "type": "Competition"
     },
     {
       "name": "AlphaFold3-based Protein Structure Prediction Inference Optimization Project",
-      "description": "Selected from the ASC25 World University Supercomputing Competition, this project focuses on inference performance optimization of Google DeepMind's AlphaFold3 protein structure prediction model. The project requires minimizing inference time on both GPU and CPU platforms while maintaining prediction accuracy, processing 12 protein sequence samples of different lengths, involving complex diffusion model architecture and JAX deep learning framework optimization.",
+      "description": "Selected from the ASC25 Student Supercomputer Challenge, this project involves inference performance optimization for the AlphaFold3 protein structure prediction model developed by Google DeepMind. The project requires minimizing inference time on both GPU and CPU platforms while maintaining prediction accuracy, processing 12 protein sequence samples of different lengths, involving complex diffusion model architecture and JAX deep learning framework optimization.",
       "highlights": [
-        "Responsibilities: Completed AlphaFold3 environment deployment on NVIDIA A100 GPU and Intel Xeon CPU hybrid architecture, identified inference bottlenecks through cProfiler performance analysis tools, discovering that JAX framework JIT compilation consumed significant time. For GPU optimization, implemented strategies including disabling Triton GEMM compilation and optimizing compilation bucket parameters; for CPU optimization, resolved numerical computation precision issues in the diffusion_head.py module, fixed NaN errors caused by negative number square roots, and adopted epsilon numerical stability techniques to ensure computational accuracy.",
-        "Project Results: Successfully achieved significant AlphaFold3 inference acceleration, with GPU optimization achieving 1.2-2.4x performance improvement across different sequence lengths, and CPU optimization achieving 1.1-5.3x speedup, particularly effective on short sequences. Through systematic compilation optimization and algorithmic tuning, while ensuring protein structure prediction confidence values consistent with baseline code, provided efficient inference solutions for AlphaFold3 applications in bioinformatics and drug design fields."
+        "Responsibilities: Completed AlphaFold3 environment deployment on NVIDIA A100 GPU and Intel Xeon CPU hybrid architecture, identified inference bottlenecks through cProfiler performance analysis tools, discovering that JAX framework JIT compilation consumes significant time. For GPU optimization, implemented strategies such as disabling Triton GEMM compilation and optimizing compilation bucket parameters; for CPU optimization, resolved numerical computation precision issues in the diffusion_head.py module, fixed NaN errors caused by negative square roots, and adopted epsilon numerical stability techniques to ensure computational accuracy.",
+        "Project Results: Successfully achieved significant AlphaFold3 inference acceleration, with GPU optimization achieving 1.2-2.4x performance improvement across different sequence lengths, and CPU optimization achieving 1.1-5.3x speedup, particularly effective on short sequences. Through systematic compilation optimization and algorithmic tuning, while ensuring protein structure prediction confidence values consistent with benchmark code, provided efficient inference solutions for AlphaFold3 applications in bioinformatics and drug design fields."
       ],
       "keywords": [],
       "startDate": "2025-01",
@@ -193,10 +193,10 @@
     },
     {
       "name": "NAMD-based Molecular Dynamics Simulation Performance Optimization Challenge",
-      "description": "Selected from IndySCC@SC24 International Supercomputing Student Cluster Competition, this project focuses on large-scale molecular dynamics simulation optimization for biomolecular systems. The project covers multi-level biological computing challenges including water molecule physical property analysis, protein folding dynamics, and thermodynamic integration free energy calculations, requiring efficient simulation of systems ranging from 100,000 to 20 million atoms within a limited 48-hour timeframe.",
+      "description": "Selected from IndySCC@SC24 International Student Cluster Competition, this project focuses on large-scale molecular dynamics simulation optimization for biomolecular systems. The project covers multiple levels of biological computing challenges including water molecule physical property analysis, protein folding dynamics, and thermodynamic integration free energy calculations, requiring efficient simulation of systems ranging from 100,000 to 20 million atoms within a limited 48-hour timeframe.",
       "highlights": [
-        "Responsibilities: Completed NAMD environment deployment and GPU acceleration configuration on Jetstream2 cloud platform, implemented various molecular dynamics simulation algorithms including extended adaptive biasing force method (eABF), replica exchange molecular dynamics, thermodynamic integration and other advanced sampling techniques, optimized time step from 2fs to 4fs through hydrogen mass repartitioning technique, adopted GPU parallel computing strategies to handle complex task scheduling for simultaneous multi-replica execution.",
-        "Project Results: Successfully completed precise calculations of water molecule heat capacity and diffusion coefficients, achieved convergent calculation of deca-alanine protein α-helix folding free energy curves, reached approximately 15 nanoseconds/day simulation performance on A100 GPU, significantly improved computational efficiency of large-scale biomolecular systems while maintaining computational accuracy through algorithmic optimization."
+        "Responsibilities: Completed NAMD environment deployment and GPU acceleration configuration on Jetstream2 cloud platform, implemented various molecular dynamics simulation algorithms including extended adaptive biasing force method (eABF), replica exchange molecular dynamics, thermodynamic integration and other advanced sampling techniques, optimized time step from 2fs to 4fs through hydrogen mass repartitioning technique, and adopted GPU parallel computing strategies to handle complex task scheduling for multiple replicas running simultaneously.",
+        "Project Results: Successfully completed precise calculations of water molecule heat capacity and diffusion coefficients, achieved convergent calculation of deca-alanine protein α-helix folding free energy curves, reached approximately 15 nanoseconds/day simulation performance on A100 GPU, and significantly improved computational efficiency for large-scale biomolecular systems through algorithmic optimization while maintaining computational accuracy."
       ],
       "keywords": [],
       "startDate": "2024-05-03",
@@ -206,10 +206,10 @@
     },
     {
       "name": "MLPerf Inference-based BERT Model Inference Performance Optimization",
-      "description": "Selected from the IndySCC24 International Supercomputing Competition MLPerf Inference benchmark testing challenge, this project focuses on inference performance optimization of the BERT-99 large language model on question-answering tasks (Squad v1.1 dataset). The project requires efficient inference implementation on CPU and GPU heterogeneous platforms, using MLCommons CM automation framework for benchmark testing configuration and result submission, involving core technologies such as deep learning inference optimization, parallel computing, and performance tuning.",
+      "description": "Selected from the IndySCC24 International Supercomputing Competition MLPerf Inference benchmark challenge, this project focuses on inference performance optimization for BERT-99 large language model on question-answering tasks (Squad v1.1 dataset). The project requires efficient inference implementation on CPU and GPU heterogeneous platforms, using MLCommons CM automation framework for benchmark configuration and result submission, involving core technologies such as deep learning inference optimization, parallel computing, and performance tuning.",
       "highlights": [
-        "Responsibilities: Deployed MLPerf environment on AMD EPYC 7713 CPU and NVIDIA A100 GPU hybrid architecture, overcoming technical challenges such as permission configuration and file packaging. Designed and implemented batch inference optimization strategies, including multi-input sample batch collection, data preprocessing pipeline reconstruction, GPU parallel inference acceleration, and result post-processing optimization. Through in-depth analysis of inference bottlenecks, reconstructed the issue_queries method to implement batch data preparation, optimized the process_batch method to improve GPU utilization, achieving end-to-end inference performance optimization.",
-        "Project Results: Successfully achieved significant BERT inference performance improvement, with GPU inference throughput reaching 85.447 samples/second, a 26.8x improvement compared to CPU's 3.193 samples/second. Through batch processing optimization techniques, improved GPU utilization from baseline test's 54% to 97%, significantly reducing inference latency while maintaining 90.876% accuracy. Project results were successfully submitted to GitHub and verified by MLCommons officials."
+        "Responsibilities: Deployed MLPerf environment on AMD EPYC 7713 CPU and NVIDIA A100 GPU hybrid architecture, overcame technical challenges including permission configuration and file packaging. Designed and implemented batch processing inference optimization strategies, including multi-input sample batch collection, data preprocessing pipeline reconstruction, GPU parallel inference acceleration, and result post-processing optimization. Through in-depth analysis of inference bottlenecks, reconstructed issue_queries method to implement batch data preparation, optimized process_batch method to improve GPU utilization, and achieved end-to-end inference performance optimization.",
+        "Project Results: Successfully achieved significant BERT inference performance improvement, with GPU inference throughput reaching 85.447 samples/second, a 26.8x improvement compared to CPU's 3.193 samples/second. Through batch processing optimization techniques, improved GPU utilization from baseline 54% to 97%, significantly reducing inference latency while maintaining 90.876% accuracy. Project results were successfully submitted to GitHub and validated by MLCommons officials."
       ],
       "keywords": [],
       "startDate": "2024-05-03",
@@ -218,11 +218,11 @@
       "roles": []
     },
     {
-      "name": "PCG Algorithm Optimization Based on New Generation Sunway Supercomputer",
-      "description": "Project Brief: Selected from the preliminary round of the 7th Domestic CPU Parallel Application Challenge, optimizing the Preconditioned Conjugate Gradient (PCG) algorithm for many-core architecture.",
+      "name": "PCG Algorithm Optimization on New Generation Sunway Supercomputer",
+      "description": "Selected from the 7th Domestic CPU Parallel Application Challenge preliminary competition, this project focuses on many-core optimization of the Preconditioned Conjugate Gradient (PCG) algorithm.",
       "highlights": [
-        "Responsibilities: For the core hotspot SpMV algorithm, adopted approximately balanced row partitioning strategy, LDM space memory access adjustment and other optimization methods; analyzed the workflow, utilized main core to hide partial computation, making full use of LDM space.",
-        "Project Results: Passed correctness verification, achieved an average speedup of 30x"
+        "Responsibilities: For the core hotspot SpMV algorithm, adopted approximately balanced row partitioning strategy and LDM space memory access adjustment methods for optimization; analyzed workflow and utilized master core to hide partial computations, fully utilizing LDM space.",
+        "Project Results: Passed correctness verification and achieved an average 30x speedup."
       ],
       "keywords": [],
       "startDate": "2024-02-21",
@@ -234,13 +234,13 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sample.resume.json",
     "version": "v1.0.0",
-    "lastModified": "2017-12-24T15:53:00"
+    "lastModified": "2025-08-20T12:00:00"
   },
   "certificates": [
     {
-      "name": "Sugon Domestic C86 Accelerator Training Certificate (AI + Scientific Computing Track)",
+      "name": "Sugon Domestic C86 Accelerator Card Training Certificate (AI + Scientific Computing Track)",
       "date": "2025-06-18",
-      "issuer": "National Research Center of High Performance Computers",
+      "issuer": "National High Performance Computer Engineering Technology Research Center",
       "url": "https://www.miitec.cn/home/certificate"
     },
     {

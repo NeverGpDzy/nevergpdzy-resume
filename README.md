@@ -155,7 +155,7 @@ npx resumed export my_resume.json -o resume.pdf -t jsonresume-theme-even
 # 渲染中文版本
 npx resumed export zh-resume.json -o zh-resume.pdf -t jsonresume-theme-even
 # 渲染英文版
-npx resumed export en-resume.json -o ren-esume.pdf -t jsonresume-theme-even
+npx resumed export en-resume.json -o en-esume.pdf -t jsonresume-theme-even
 ```
 
 **注意**：首次安装 puppeteer 可能需要一些时间，因为它需要下载 Chromium。
