@@ -118,7 +118,12 @@ npx resumed validate my_resume.json
 ### 2. 渲染为 HTML
 
 ```bash
+# 渲染默认
 npx resumed render my_resume.json -o resume.html -t jsonresume-theme-even
+# 渲染中文版本
+npx resumed render zh-resume.json -o zh-resume.html -t jsonresume-theme-even
+# 渲染英文版
+npx resumed render en-resume.json -o en-resume.html -t jsonresume-theme-even
 ```
 
 成功后会看到：
@@ -145,7 +150,12 @@ npm install puppeteer
 然后导出：
 
 ```bash
+# 渲染默认
 npx resumed export my_resume.json -o resume.pdf -t jsonresume-theme-even
+# 渲染中文版本
+npx resumed export zh-resume.json -o zh-resume.pdf -t jsonresume-theme-even
+# 渲染英文版
+npx resumed export en-resume.json -o ren-esume.pdf -t jsonresume-theme-even
 ```
 
 **注意**：首次安装 puppeteer 可能需要一些时间，因为它需要下载 Chromium。
