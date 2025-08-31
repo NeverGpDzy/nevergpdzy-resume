@@ -162,7 +162,7 @@
         "承担工作：并行化：通过在原有串行程序上进行MPI与OpenMP混合并行化，通过VTune工具识别性能瓶颈，采用负载均衡技术，充分利用2节点128核计算资源，使算法执行效率得到提升。访存优化方面我们使用Fortran/C重新排列数据访问顺序，利用内存局部性提高缓存命中率。在通信优化方面我利用了非阻塞通信、打包数据通信等方式进行优化。此外我们还在在算法层面使用快速排除未交叉线段和二分查找等优化技术，快速确定油粒子轨迹与海岸线的关系",
         "项目成果：通过组委会提供算例的正确性检验，在初始算例上，相较于Baseline，取得了大约2482.14倍的加 速比，在决赛队伍中排位第五，获得全国三等奖。"
       ],
-      "keywords": [],
+      "keywords": ["MPI", "OpenMP", "并行计算", "Fortran", "科学计算"],
       "startDate": "2024-07-01",
       "endDate": "2024-08-31",
       "url": "http://www.paraedu.org.cn/enterstep/index?id=14&groupTag=MCC",
@@ -179,7 +179,7 @@
         "承担工作：在NVIDIA A100 GPU和Intel Xeon CPU混合架构上完成AlphaFold3环境部署，通过cProfiler性能分析工具识别推理瓶颈，发现JAX框架的JIT编译占用大量时间。针对GPU优化实施禁用Triton GEMM编译、优化编译桶参数等策略；针对CPU平台运行时的致命性数值计算精度问题，修复负数开方导致的NaN错误。",
         "项目成果：成功实现AlphaFold3推理显著加速，在保证蛋白质结构预测confidence值与基准代码一致的情况下，GPU平台在不同序列长度下达到1.2-2.4倍的性能提升，CPU平台实现1.1-5.3倍的加速比，特别是在短序列上效果显著。"
       ],
-      "keywords": [],
+      "keywords": ["AlphaFold3", "JAX", "蛋白质预测", "推理优化", "AI4S"],
       "startDate": "2025-01",
       "endDate": "2025-02",
       "url": "https://www.asc-events.net/StudentChallenge/index.html",
@@ -213,7 +213,7 @@
         "承担工作：并行算法设计：基于0.064核从核架构完成PCG求解器的并行化重构，实现稀疏矩阵向量乘法(SpMV)、点积运算、预条件化等核心算法的高效并行版本，使用athread库进行线程管理和同步控制。内存访问优化：设计并实现DMA(直接内存访问)操作策略，优化LDM(局部数据存储器)使用效率，通过共享内存数组和智能数据分块解决内存容量限制，减少主从核间数据传输开销。算法层面优化：完成LDU到CSR(压缩稀疏行)矩阵格式转换优化，实现多个独立操作的函数融合以减少调用开销，设计异构架构相关的归约操作和同步机制。",
         "项目成果：通过40多轮系统性迭代优化，实现了39.6倍性能提升，总运行时间从1287秒优化至32.5秒。解决了LDM容量限制导致的数据分块难题，成功实现多个矩阵运算函数的融合，显著减少了主从核间的数据传输次数和函数调用开销。"
       ],
-      "keywords": [],
+      "keywords": ["神威超算", "PCG算法", "SpMV", "异构计算", "共享内存优化"],
       "startDate": "2024-02-21",
       "endDate": "2024-04-21",
       "url": "https://nevergpdzy.cn/",
@@ -243,7 +243,7 @@
         "承担工作：在AMD EPYC 7713 CPU和NVIDIA A100 GPU混合架构上部署MLPerf环境，克服权限配置和文件打包等技术难题。设计并实现批处理推理优化策略，包括多输入样本批量收集、数据预处理pipeline重构、GPU并行推理加速和结果后处理优化。通过深入分析推理瓶颈，重构issue_queries方法实现批量数据准备，优化process_batch方法提升GPU利用率，实现推理性能优化。此外我还尝试使用了模型量化、混合精度推理等方法加快推理速度。",
         "项目成果：成功实现BERT推理性能显著提升，GPU推理吞吐量达到85.447样本/秒，相比CPU的3.193样本/秒提升26.8倍。通过批处理优化技术将GPU利用率从基准测试的54%提升至97%，在保持90.876%准确率的同时大幅降低推理延迟。项目成果成功提交至GitHub并通过MLCommons官方验证。"
       ],
-      "keywords": [],
+      "keywords": ["MLPerf", "BERT", "推理测试", "GPU加速", "批处理优化"],
       "startDate": "2024-05-03",
       "endDate": "2024-11-19",
       "url": "https://sc24.supercomputing.org/2024/09/introducing-the-innovative-indyscc-teams/",
@@ -257,7 +257,7 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sample.resume.json",
     "version": "v1.0.0",
-    "lastModified": "2017-12-24T15:53:00"
+    "lastModified": "2025-8-31T20:14:00"
   },
   "certificates": [
 

@@ -127,6 +127,10 @@ customElements.define('time-duration', TimeDuration)
                   </ul>
                 
                 
+                  <ul class="tag-list">
+                    <li>MPI</li><li>OpenMP</li><li>并行计算</li><li>Fortran</li><li>科学计算</li>
+                  </ul>
+                
               </article>
             
               <article>
@@ -146,6 +150,10 @@ customElements.define('time-duration', TimeDuration)
                     <li><p>承担工作：在NVIDIA A100 GPU和Intel Xeon CPU混合架构上完成AlphaFold3环境部署，通过cProfiler性能分析工具识别推理瓶颈，发现JAX框架的JIT编译占用大量时间。针对GPU优化实施禁用Triton GEMM编译、优化编译桶参数等策略；针对CPU平台运行时的致命性数值计算精度问题，修复负数开方导致的NaN错误。</p></li><li><p>项目成果：成功实现AlphaFold3推理显著加速，在保证蛋白质结构预测confidence值与基准代码一致的情况下，GPU平台在不同序列长度下达到1.2-2.4倍的性能提升，CPU平台实现1.1-5.3倍的加速比，特别是在短序列上效果显著。</p></li>
                   </ul>
                 
+                
+                  <ul class="tag-list">
+                    <li>AlphaFold3</li><li>JAX</li><li>蛋白质预测</li><li>推理优化</li><li>AI4S</li>
+                  </ul>
                 
               </article>
             
@@ -191,6 +199,10 @@ customElements.define('time-duration', TimeDuration)
                   </ul>
                 
                 
+                  <ul class="tag-list">
+                    <li>神威超算</li><li>PCG算法</li><li>SpMV</li><li>异构计算</li><li>共享内存优化</li>
+                  </ul>
+                
               </article>
             
               <article>
@@ -234,6 +246,10 @@ customElements.define('time-duration', TimeDuration)
                     <li><p>承担工作：在AMD EPYC 7713 CPU和NVIDIA A100 GPU混合架构上部署MLPerf环境，克服权限配置和文件打包等技术难题。设计并实现批处理推理优化策略，包括多输入样本批量收集、数据预处理pipeline重构、GPU并行推理加速和结果后处理优化。通过深入分析推理瓶颈，重构issue_queries方法实现批量数据准备，优化process_batch方法提升GPU利用率，实现推理性能优化。此外我还尝试使用了模型量化、混合精度推理等方法加快推理速度。</p></li><li><p>项目成果：成功实现BERT推理性能显著提升，GPU推理吞吐量达到85.447样本/秒，相比CPU的3.193样本/秒提升26.8倍。通过批处理优化技术将GPU利用率从基准测试的54%提升至97%，在保持90.876%准确率的同时大幅降低推理延迟。项目成果成功提交至GitHub并通过MLCommons官方验证。</p></li>
                   </ul>
                 
+                
+                  <ul class="tag-list">
+                    <li>MLPerf</li><li>BERT</li><li>推理测试</li><li>GPU加速</li><li>批处理优化</li>
+                  </ul>
                 
               </article>
             
