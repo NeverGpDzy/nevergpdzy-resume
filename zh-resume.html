@@ -163,56 +163,12 @@ customElements.define('time-duration', TimeDuration)
                 <p>选自IndySCC24国际大学生超级计算机竞赛NAMD赛题。项目涵盖分子动力学仿真的完整工作流程，包括水分子系统物理性质验证、蛋白质折叠自由能研究、热力学积分计算、药物膜渗透模拟等多个科学计算场景，要求在高性能计算平台上实现最佳的计算性能与科学精度平衡。</p>
                 
                   <ul>
-                    <li><p>承担工作：基础物理性质验证：完成水分子系统热容计算(标准条件1.015835 cal/g/K与实验值1.0高度吻合)和扩散系数测定(12Å截断4.79×10⁻⁹ m²/s，9Å截断4.78×10⁻⁹ m²/s)，通过对比不同截断距离和时间步长参数验证仿真精度。复杂生物系统建模：使用增强采样技术(eABF)研究十丙氨酸蛋白折叠，通过副本交换热力学积分计算谷氨酸质子化自由能差(目标值1.53±0.12 kcal/mol)，完成跨膜药物渗透自由能剖面计算。性能基准测试：系统测试不同规模分子系统的计算性能，分析仿真速度与系统规模的关系。</p></li><li><p>项目成果：通过参数调优和算法选择实现显著性能提升，验证了截断距离对计算精度和效率的权衡关系(9Å截断相比12Å减少约一半非键相互作用计算量但保持物理性质精度)。成功完成多个数百纳秒级的长时间仿真任务，包括蛋白质折叠能量势面计算和跨膜自由能剖面分析，展现了在大规模科学计算和复杂生物系统建模方面的实践能力。</p></li>
+                    <li><p>承担工作：基础物理性质验证：完成水分子系统热容计算和扩散系数测定，通过对比不同截断距离和时间步长参数验证仿真精度。复杂生物系统建模：使用增强采样技术(eABF)研究十丙氨酸蛋白折叠，通过副本交换热力学积分计算谷氨酸质子化自由能差，完成跨膜药物渗透自由能剖面计算。性能基准测试：系统测试不同规模分子系统的计算性能，分析仿真速度与系统规模的关系。</p></li><li><p>项目成果：通过参数调优和算法选择实现显著性能提升，验证了截断距离对计算精度和效率的权衡关系(9Å截断相比12Å减少约一半非键相互作用计算量但保持物理性质精度)。成功完成多个数百纳秒级的长时间仿真任务，包括蛋白质折叠能量势面计算和跨膜自由能剖面分析，展现了在大规模科学计算和复杂生物系统建模方面的实践能力。</p></li>
                   </ul>
                 
                 
                   <ul class="tag-list">
                     <li>NAMD</li><li>分子动力学</li><li>自由能计算</li><li>热力学积分</li><li>科学计算</li>
-                  </ul>
-                
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://sc24.supercomputing.org/2024/09/introducing-the-innovative-indyscc-teams/">基于MLPerf的BERT模型基准测试推理性能优化</a></h4>
-                  <div class="meta">
-                    <div>
-                      
-                      
-                    </div>
-                    <div><time-duration><time datetime="2024-05-03">May 2024</time> – <time datetime="2024-11-19">Nov 2024</time></time-duration></div> 
-                  </div>
-                </header>
-                <p>选自IndySCC24国际大学生超级计算机竞赛MLPerf推理基准测试赛题。项目要求在GPU和CPU异构计算平台上部署和优化BERT-99模型推理性能，使用MLCommons CM自动化框架进行基准测试，涉及深度学习模型推理优化、批量处理技术和系统性能调优等关键技术。</p>
-                
-                  <ul>
-                    <li><p>承担工作：在AMD EPYC 7713 CPU和NVIDIA A100 GPU混合架构上部署MLPerf环境，克服权限配置和文件打包等技术难题。设计并实现批处理推理优化策略，包括多输入样本批量收集、数据预处理pipeline重构、GPU并行推理加速和结果后处理优化。通过深入分析推理瓶颈，重构issue_queries方法实现批量数据准备，优化process_batch方法提升GPU利用率，实现推理性能优化。此外我还尝试使用了模型量化、混合精度推理等方法加快推理速度。</p></li><li><p>项目成果：成功实现BERT推理性能显著提升，GPU推理吞吐量达到85.447样本/秒，相比CPU的3.193样本/秒提升26.8倍。通过批处理优化技术将GPU利用率从基准测试的54%提升至97%，在保持90.876%准确率的同时大幅降低推理延迟。项目成果成功提交至GitHub并通过MLCommons官方验证。</p></li>
-                  </ul>
-                
-                
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://openatom.org/">Tecorigin深度学习算子性能优化</a></h4>
-                  <div class="meta">
-                    <div>
-                      <strong>核心开发者</strong>
-                      at <strong>第二届开放原子大赛</strong>
-                    </div>
-                    <div><time-duration><time datetime="2024-06-01">Jun 2024</time> – <time datetime="2024-09-30">Sep 2024</time></time-duration></div> <div>Competition</div>
-                  </div>
-                </header>
-                <p>选自第二届开放原子大赛Tecorigin算子开发任务挑战赛。针对tecoalConvolutionForward卷积前向算子进行系统性能优化，通过深度性能分析发现I/O瓶颈占总耗时93.1%，采用多层次优化策略包括SPM内存管理、SIMD数据重排、异步流水线等技术，在保证算法正确性的前提下实现显著的性能提升。</p>
-                
-                  <ul>
-                    <li><p>承担工作：性能瓶颈分析：通过Perf Data工具建立完整性能画像，精确识别I/O耗时占93.1%的核心瓶颈。SPM内存优化：设计234KB SPM内存管理策略，实现智能分块算法和双缓冲异步流水线，将输出带宽从388GB/s提升至8419GB/s(21.7倍提升)。SIMD数据重排优化：针对矩阵乘法库输出格式与标准NHWC格式的不匹配问题，设计基于floatv16向量寄存器的高效重排算法，用纯硬件SIMD指令替代传统memcpy，实现16个元素并行处理。算法层面优化：构建Cost Model数学模型指导分块策略参数自动调优，运用位运算替代除法操作，集成专用矩阵乘法库支持混合精度计算。</p></li><li><p>项目成果：实现3.7倍整体性能提升，总耗时从1820.78ms优化至489.18ms。其中输出缓冲区优化贡献600.69ms，SIMD数据重排优化贡献547.88ms(30%+)，Cost Model分块优化贡献181.27ms。获得开源技术大会演讲机会，技术方案可直接迁移到NVIDIA CUDA等主流GPU平台，展现了跨平台高性能计算优化能力。</p></li>
-                  </ul>
-                
-                
-                  <ul class="tag-list">
-                    <li>CUDA编程</li><li>GPU内存优化</li><li>SIMD</li><li>深度学习算子</li><li>SPM内存管理</li>
                   </ul>
                 
               </article>
@@ -228,10 +184,54 @@ customElements.define('time-duration', TimeDuration)
                     <div><time-duration><time datetime="2024-02-21">Feb 2024</time> – <time datetime="2024-04-21">Apr 2024</time></time-duration></div> 
                   </div>
                 </header>
-                <p>项目简介: 选自第七届国产CPU 并行应用挑战赛初赛题目，对预处理共轭梯度算法PCG 进行众核优化。</p>
+                <p>项目简介: 选自第七届国产CPU 并行应用挑战赛初赛题目，针对数值仿真计算中的核心算法——预条件共轭梯度(PCG)求解器进行深度性能优化。项目基于新一代神威超级计算机的异构众核架构，通过系统性并行化改造、内存访问优化和算法融合等技术手段，在保证数值计算精度的前提下实现显著的性能提升。</p>
                 
                   <ul>
-                    <li><p>承担工作: 针对核心热点SpMV 算法，采用了近似均衡的行划分策略、LDM 空间访存调整等方法进行优化；分析流程，利用主核隐藏部分计算，充分利用LDM 空间。</p></li><li><p>项目成果: 通过正确性检验，达到平均30倍的加速比</p></li>
+                    <li><p>承担工作：并行算法设计：基于0.064核从核架构完成PCG求解器的并行化重构，实现稀疏矩阵向量乘法(SpMV)、点积运算、预条件化等核心算法的高效并行版本，使用athread库进行线程管理和同步控制。内存访问优化：设计并实现DMA(直接内存访问)操作策略，优化LDM(局部数据存储器)使用效率，通过共享内存数组和智能数据分块解决内存容量限制，减少主从核间数据传输开销。算法层面优化：完成LDU到CSR(压缩稀疏行)矩阵格式转换优化，实现多个独立操作的函数融合以减少调用开销，设计异构架构相关的归约操作和同步机制。</p></li><li><p>项目成果：通过40多轮系统性迭代优化，实现了39.6倍性能提升，总运行时间从1287秒优化至32.5秒。解决了LDM容量限制导致的数据分块难题，成功实现多个矩阵运算函数的融合，显著减少了主从核间的数据传输次数和函数调用开销。</p></li>
+                  </ul>
+                
+                
+              </article>
+            
+              <article>
+                <header>
+                  <h4><a href="https://openatom.org/">Tecorigin深度学习算子性能优化</a></h4>
+                  <div class="meta">
+                    <div>
+                      <strong>队长</strong>
+                      at <strong>梦溪湖队</strong>
+                    </div>
+                    <div><time-duration><time datetime="2024-06-01">Jun 2024</time> – <time datetime="2024-09-30">Sep 2024</time></time-duration></div> <div>Competition</div>
+                  </div>
+                </header>
+                <p>选自第二届开放原子大赛Tecorigin算子开发任务挑战赛。针对tecoalConvolutionForward卷积前向算子进行系统性能优化，通过深度性能分析发现I/O瓶颈占总耗时93.1%，采用多层次优化策略包括SPM内存管理、SIMD数据重排、异步流水线等技术，在保证算法正确性的前提下实现显著的性能提升。</p>
+                
+                  <ul>
+                    <li><p>承担工作：性能瓶颈分析：通过Perf Data工具建立完整性能画像，精确识别I/O耗时占93.1%的核心瓶颈。SPM内存优化：设计234KB SPM内存管理策略，实现双缓冲异步流水线，将输出带宽从388GB/s提升至8419GB/s(21.7倍提升)。SIMD数据重排优化：针对矩阵乘法库输出格式与标准NHWC格式的不匹配问题，设计基于floatv16向量寄存器的高效重排算法，用纯硬件SIMD指令替代传统memcpy，实现16个元素并行处理。算法层面优化：构建Cost Model数学模型指导分块策略参数自动调优，运用位运算替代除法操作，集成专用矩阵乘法库支持混合精度计算。</p></li><li><p>项目成果：实现3.7倍整体性能提升，总耗时从1820.78ms优化至489.18ms。其中输出缓冲区优化贡献600.69ms，SIMD数据重排优化贡献547.88ms(30%+)，Cost Model分块优化贡献181.27ms。获得全国三等奖</p></li>
+                  </ul>
+                
+                
+                  <ul class="tag-list">
+                    <li>CUDA编程</li><li>GPU内存优化</li><li>SIMD</li><li>深度学习算子</li><li>SPM内存管理</li>
+                  </ul>
+                
+              </article>
+            
+              <article>
+                <header>
+                  <h4><a href="https://sc24.supercomputing.org/2024/09/introducing-the-innovative-indyscc-teams/">基于MLPerf的BERT模型基准测试推理性能优化</a></h4>
+                  <div class="meta">
+                    <div>
+                      <strong>队员</strong>
+                      at <strong>Dream Brook Team</strong>
+                    </div>
+                    <div><time-duration><time datetime="2024-05-03">May 2024</time> – <time datetime="2024-11-19">Nov 2024</time></time-duration></div> <div>Competition</div>
+                  </div>
+                </header>
+                <p>选自IndySCC24国际大学生超级计算机竞赛MLPerf推理基准测试赛题。项目要求在GPU和CPU异构计算平台上部署和优化BERT-99模型推理性能，使用MLCommons CM自动化框架进行基准测试，涉及深度学习模型推理优化、批量处理技术和系统性能调优等关键技术。</p>
+                
+                  <ul>
+                    <li><p>承担工作：在AMD EPYC 7713 CPU和NVIDIA A100 GPU混合架构上部署MLPerf环境，克服权限配置和文件打包等技术难题。设计并实现批处理推理优化策略，包括多输入样本批量收集、数据预处理pipeline重构、GPU并行推理加速和结果后处理优化。通过深入分析推理瓶颈，重构issue_queries方法实现批量数据准备，优化process_batch方法提升GPU利用率，实现推理性能优化。此外我还尝试使用了模型量化、混合精度推理等方法加快推理速度。</p></li><li><p>项目成果：成功实现BERT推理性能显著提升，GPU推理吞吐量达到85.447样本/秒，相比CPU的3.193样本/秒提升26.8倍。通过批处理优化技术将GPU利用率从基准测试的54%提升至97%，在保持90.876%准确率的同时大幅降低推理延迟。项目成果成功提交至GitHub并通过MLCommons官方验证。</p></li>
                   </ul>
                 
                 
@@ -256,7 +256,7 @@ customElements.define('time-duration', TimeDuration)
             
               <article>
                 <header>
-                  <h4>受邀参加SC24国际超算竞赛线上赛道IndySCC</h4>
+                  <h4>受邀参加SC会议国际超算大赛线上赛道IndySCC24</h4>
                   <div class="meta">
                     <div>Awarded by <strong>SC Student Cluster Competition Committee</strong></div> <time datetime="2024-11-19">Nov 2024</time>
                   </div>
@@ -268,7 +268,7 @@ customElements.define('time-duration', TimeDuration)
                 <header>
                   <h4>2024年海洋计算挑战赛全国总决赛三等奖</h4>
                   <div class="meta">
-                    <div>Awarded by <strong>中国太平洋学会、北京并行科技有限公司</strong></div> <time datetime="2024-08-28">Aug 2024</time>
+                    <div>Awarded by <strong>北京并行科技有限公司&中国太平洋学会</strong></div> <time datetime="2024-08-28">Aug 2024</time>
                   </div>
                 </header>
                 <p>海洋计算挑战赛（Marine Computing Challenge，简称MCC）主要内容涵盖海洋大数据处理与分析、海洋环境模拟与预测、海洋资源开发与利用、海洋灾害预警与应急响应、海洋人工智能应用等不同应用场景，综合考察参赛者在海洋应用领域的各项技能。</p>
@@ -286,9 +286,9 @@ customElements.define('time-duration', TimeDuration)
             
               <article>
                 <header>
-                  <h4>天翼云息壤杯高校AI大赛四川省赛第二名</h4>
+                  <h4>天翼云息壤杯高校AI大赛四川省赛赛道第二名</h4>
                   <div class="meta">
-                    <div>Awarded by <strong>中国电信集团有限公司、华为技术有限公司</strong></div> <time datetime="2025-07-18">Jul 2025</time>
+                    <div>Awarded by <strong>中国电信集团有限公司&华为技术有限公司</strong></div> <time datetime="2025-07-18">Jul 2025</time>
                   </div>
                 </header>
                 <p>天翼云息壤杯高校AI大赛算子优化赛道，基于昇腾NPU平台使用AscendC进行算子开发与性能优化。竞赛涵盖NLLLossGrad反向算子、QuantBatchMatmul+Swiglu融合算子等深度学习核心算子的高性能实现，考察昇腾910B架构下的多核并行、Cube/Vector流水线优化、内存管理等关键技术。赛题聚焦国产化异构计算底座的算子精细化优化，推动CANN生态下的高性能计算创新应用。</p>
@@ -298,20 +298,10 @@ customElements.define('time-duration', TimeDuration)
                 <header>
                   <h4>第十五届蓝桥杯全国总决赛三等奖</h4>
                   <div class="meta">
-                    <div>Awarded by <strong>工业和信息化部人才交流中心、蓝桥杯大赛组委会</strong></div> <time datetime="2024-06-02">Jun 2024</time>
+                    <div>Awarded by <strong>蓝桥杯大赛组委会&工业和信息化部人才交流中心</strong></div> <time datetime="2024-06-02">Jun 2024</time>
                   </div>
                 </header>
                 <p>蓝桥杯大赛Python程序设计组，此竞赛涵盖基础算法、数据结构、动态规划、图论、字符串处理、数学计算等题型，要求在限定时间和OI赛制下完成多道编程题目，重点考察参赛者使用Python语言解决算法问题的能力。</p>
-              </article>
-            
-              <article>
-                <header>
-                  <h4>受邀参加2024腾讯开悟人工智能全球公开赛邀请赛</h4>
-                  <div class="meta">
-                    <div>Awarded by <strong>2024 腾讯开悟人工智能全球公开赛组委会</strong></div> <time datetime="2024-12-21">Dec 2024</time>
-                  </div>
-                </header>
-                <p>参与 2024 腾讯开悟人工智能全球公开赛邀请赛，在「AIPC高效能博弈赛道」中成功完赛。</p>
               </article>
             
               <article>
@@ -327,31 +317,6 @@ customElements.define('time-duration', TimeDuration)
         </div>
       </section>
      
-      <section id="certificates">
-        <h3>Certificates</h3>
-        <div class="stack">
-          
-              <article>
-                <header>
-                  <h4><a href="https://www.miitec.cn/home/certificate">曙光国产C86加速卡培训证书（人工智能+科学计算方向）</a></h4>
-                  <div class="meta">
-                    <div>Issued by <strong>国家高性能计算机工程技术研究中心</strong></div> <time datetime="2025-06-18">Jun 2025</time>
-                  </div>
-                </header>
-              </article>
-            
-              <article>
-                <header>
-                  <h4><a href="https://www.miitec.cn/home/certificate">工业互联网平台开发工程师</a></h4>
-                  <div class="meta">
-                    <div>Issued by <strong>工业和信息化部人才交流中心</strong></div> <time datetime="2024-05-22">May 2024</time>
-                  </div>
-                </header>
-              </article>
-            
-        </div>
-      </section>
-    
          
       <section id="skills">
         <h3>Skills</h3>
