@@ -39,11 +39,14 @@ jobs:
 
       - name: Detect GitHub Pages status
         id: pages-status
+        shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
           REPOSITORY: ${{ github.repository }}
-          HAS_ENABLEMENT_TOKEN: ${{ secrets.PAGES_ENABLEMENT_TOKEN != '' }}
+          PAGES_ENABLEMENT_TOKEN: ${{ secrets.PAGES_ENABLEMENT_TOKEN }}
         run: |
+          set -euo pipefail
+
           http_status="$(curl -sS -o /dev/null -w '%{http_code}' \
             -H "Authorization: Bearer ${GH_TOKEN}" \
             -H "Accept: application/vnd.github+json" \
@@ -56,7 +59,7 @@ jobs:
               echo "mode=configured" >> "${GITHUB_OUTPUT}"
               ;;
             404)
-              if [ "${HAS_ENABLEMENT_TOKEN}" = "true" ]; then
+              if [ -n "${PAGES_ENABLEMENT_TOKEN}" ]; then
                 echo "should_deploy=true" >> "${GITHUB_OUTPUT}"
                 echo "mode=enable" >> "${GITHUB_OUTPUT}"
               else
